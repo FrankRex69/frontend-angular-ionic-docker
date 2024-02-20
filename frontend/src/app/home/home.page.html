@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <aside>
+    <nav>
+      <ul>
+        <li (click)="prova1()">Login</li>
+        <li (click)="listItem()">List-item</li>
+        <li (click)="users()">Users</li>
+        <li (click)="logOut()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <router-outlet></router-outlet>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+
+</ion-content>

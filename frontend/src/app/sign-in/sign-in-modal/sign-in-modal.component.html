@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sign In</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">  
+  <form (ngSubmit)="createSignIn(createForm)" #createForm="ngForm">
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>Username</ion-col>
+      <ion-col text-center>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          class="form-control"
+          ngModel
+          required
+          style="width: 300px"/>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>Password</ion-col>
+      <ion-col text-center>
+        <input
+        type="text"
+        id="password"
+        name="password"
+        class="form-control"
+        ngModel
+        required
+        style="width: 300px"/>
+      </ion-col>
+    </ion-row>
+    <ion-button [disabled]="createForm.invalid" class="btn btn-success" type="submit">Sign In</ion-button>
+  </ion-grid>
+  </form>
+</ion-content>

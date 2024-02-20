@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Update</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="updateListItemModal(updateForm)" #updateForm="ngForm">
+  <ion-grid> 
+    <ion-row>
+      <ion-col text-center>
+        <input
+          type="hidden"
+          id="id"
+          name="id"
+          class="form-control"
+          required
+          [(ngModel)]="id"
+          style="width: 400px"/>
+          ID : {{id}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>Campo 1</ion-col>
+      <ion-col text-center>
+        <input
+          type="text"
+          id="campo1"
+          name="campo1"
+          class="form-control"
+          required
+          [(ngModel)]="campo1"
+          style="width: 400px"/>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>Campo 2</ion-col>
+      <ion-col text-center>
+        <input
+          type="text"
+          id="campo2"
+          name="campo2"
+          class="form-control"
+          required
+          [(ngModel)]="campo2"
+          style="width: 400px"/>
+      </ion-col>
+    </ion-row>    
+    <ion-button class="btn btn-success" type="submit">Update</ion-button>
+  </ion-grid>
+  </form>
+</ion-content>
