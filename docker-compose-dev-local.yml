@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  app:
+    # name image
+    image: '${IMAGE}'
+    # setup for build image (path for dockerfile e target in docker file [not mandatory])
+    networks:
+      - proxy
+    build:
+      # path Dockerfile
+      context: ./
+      # Target use in dockerfile with multiple setup (example: local, prod)
+      target: '${TARGET}'
+    # entrypoint: bash -c '${COMMAND}'
+    ports:
+      - '${APP_PORT}:${APP_PORT}'
+      - 35729:35729
+    # One of the main advantages of using Docker volumes
+    # is the possibility of changing the content/configuration
+    # of a container without the need to recreate it.   
+    volumes:
+     - ./frontend/src:/app/frontend/src 
+     - ./frontend/node_modules:/app/frontend/node_modules
+
+networks:
+  proxy:
+    external: true

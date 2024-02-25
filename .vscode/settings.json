@@ -1,0 +1,36 @@
+{
+    "eslint.workingDirectories": ["frontend"],
+  
+    // "prettier.configPath": "frontend/.prettierrc",
+  
+    // "editor.formatOnSave": true,
+  
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+    // "[html]": {
+    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+  
+    // "[typescript]": {
+    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+  
+    // "[javascript]": {
+    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+  
+    // "[json]": {
+    //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // },
+  
+    // "gitPrefix.pattern": "([a-zA-Z0-9-]*)(/.*)?",
+  
+    // "gitPrefix.replacement": "(p2 ? `[${p2.replace('/', '')}]\\n- ` : `[${p1}]\\n- `)",
+  
+    // "gitPrefix.replacementIsFunction": true,
+    // "vsicons.presets.angular": true,
+    // "[dockerfile]": {
+    //   "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    // }
+  }
+  

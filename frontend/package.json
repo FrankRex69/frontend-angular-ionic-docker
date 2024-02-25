@@ -23,6 +23,7 @@
     "@datorama/akita": "7.1.1",
     "@ionic/angular": "6.0.0",
     "axios": "^1.6.1",
+    "commons-nestjs-backend-frex": "^1.0.0",
     "https": "^1.0.0",
     "rxjs": "6.6.0",
     "tslib": "2.2.0",

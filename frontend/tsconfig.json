@@ -15,7 +15,7 @@
     "lib": ["es2018", "dom"],
     "paths": {
       "rxjs": ["./node_modules/rxjs"],
-      "@commons/*": ["../backend/src/commons/*"],
+      "@commons/*": ["./node_modules/commons-nestjs-backend-frex/*"],
       "@shared/*": ["./src/app/shared/*"]
     }
   },
